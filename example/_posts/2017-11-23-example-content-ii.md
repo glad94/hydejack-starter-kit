@@ -6,7 +6,8 @@ description: >
 image: /assets/img/blog/example-content-ii.jpg
 noindex: true
 
-category:example
+categories: [example]
+tags: [example]
 ---
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
