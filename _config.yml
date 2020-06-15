@@ -50,7 +50,7 @@ menu:
   - title:             About
     url:               /about/
   - title:             Categories
-    url:               /categories/
+    url:               /cats/
   - title:             Archive
     url:               /archive/
 
