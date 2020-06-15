@@ -19,19 +19,16 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack Starter Kit
+title:                 Gerald Lim
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Best Jekyll Theme by a Mile".
-  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
-  Open `_config.yml` to edit this text.
+  Side projects with a focus on sports data 
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Best Jekyll Theme by a Mile".
-  Open `_config.yml` to edit this text.
+  Side projects with a focus on sports data
 
 # A list of keywords for your blog
 keywords:              []
@@ -50,12 +47,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               https://hydejack.com/docs/
   - title:             About
     url:               /about/
+  - title:             Categories
+    url:               /categories/
+  - title:             Archive
+    url:               /archive/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
