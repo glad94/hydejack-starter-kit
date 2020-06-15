@@ -53,8 +53,6 @@ author:
 menu:
   - title:             About
     url:               /about/
-  - title:             Categories
-    url:               /cats/
   - title:             Archive
     url:               /archive/
 
