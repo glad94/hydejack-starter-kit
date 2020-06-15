@@ -54,7 +54,7 @@ menu:
   - title:             About
     url:               /about/
   - title:             Categories
-    path:              /cats/
+    url:               /cats/
   - title:             Archive
     url:               /archive/
 
