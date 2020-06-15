@@ -6,7 +6,7 @@ description: >
 author: author1
 image: /assets/img/2020-06-11-Best-Mates/skysports-ben-mee-james-tarkowski_4918858.jpg
 noindex: true
-categories: [general]
+categories: [football]
 tags: [Football, Premier League, Analytics]
 ---
 
