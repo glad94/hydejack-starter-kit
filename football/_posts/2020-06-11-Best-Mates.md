@@ -14,7 +14,7 @@ tags: [Football, Premier League, Analytics]
 
 ## Getting the Data
 
-I used data from Transfermarkt.com for this project, which provides the following per game stats for each player for every season in their record:</p>
+I used data from Transfermarkt.com for this project, which provides the following per game stats for each player for every season in their record:
 
 - Number of minutes played
 - Minute sub-ed in  
