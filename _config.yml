@@ -81,8 +81,8 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/background.jpg
-accent_color:          rgb(79,177,186)
+accent_image:          /assets/img/Liv2-0Mcu.PNG
+accent_color:          rgb(186,87,78)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
