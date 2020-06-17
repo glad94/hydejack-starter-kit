@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Scatter Plots for Tennis: Break Points + some Interactivity
+title: Scatter Plots for Tennis (Break Points)
 description: >
-  Visualising Tennis Player Data 
+  These two sure know a thing or two about them.
 author: author1
 image: /assets/img/2020-06-16-Tennis-Scatter/Isner_Anderson.jpg
 noindex: true
 categories: [tennis]
 tags: [Tennis, ATP, Analytics]
 ---
+
 
 Scatter points have emerged as one of the most popular methods for visualising football data recently. While not novel by any means (though 
 I'm not sure about the first ever documented scatter plot), displaying complementary data on 2 axes really helps to bring out striking bits 
