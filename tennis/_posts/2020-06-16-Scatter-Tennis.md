@@ -85,7 +85,7 @@ The 21 year old Swede Mikael Ymer, who has the 2nd best break point conversion i
 
 ## Closing thoughts
 There are a plethora of ways to analyse tennis players and I've really only scratched the surface with just these three dimensions. Besides looking to make some "fancy" visuals with tennis data I was probably also motivated through this, to look back on tennis history, go "oh, I
-didn't expect this player to be that good/bad actually" and maybe change my impressions of certain players. Anyway, I'll end this post with an interactive version of the 1991-2020 Break Point Statistics plot, which also allows you to highlight individual players and certain notable groups of them (e.g. former world #1s). Have fun with it and til next time :D. 
+didn't expect this player to be that good/bad actually" and maybe change my impressions of certain players. Anyway, I'll end this post with an interactive version of the 1991-2020 Break Point Statistics plot (probably best viewed on a desktop for now), which also allows you to highlight individual players and certain notable groups of them (e.g. former world #1s). Have fun with it and til next time :D. 
 
 <iframe src="/assets/img/2020-06-16-Tennis-Scatter/Interactive_ATP_Break_Points.html" 
     sandbox="allow-same-origin allow-scripts"
