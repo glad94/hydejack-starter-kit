@@ -89,8 +89,8 @@ didn't expect this player to be that good/bad actually" and maybe change my impr
 
 <iframe src="/assets/img/2020-06-16-Tennis-Scatter/Interactive_ATP_Break_Points.html" 
     sandbox="allow-same-origin allow-scripts"
-    width="60%"
-    height="300"
+    width="100%"
+    height="800"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
