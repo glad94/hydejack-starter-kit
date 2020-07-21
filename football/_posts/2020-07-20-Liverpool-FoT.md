@@ -41,8 +41,6 @@ For each sequence of events, I computed the pitch control values per 10 frames a
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Salah’s header to make it 2-0 back in November. The successful long diagonal spearheads a surge in Liverpool’s pitch control into right midfield. By the time of Salah’s shot, Liverpool have made gains all across City’s box thanks to the runs of Liverpool’s 3 forwards. <a href="https://twitter.com/hashtag/FoT?src=hash&amp;ref_src=twsrc%5Etfw">#FoT</a> <a href="https://t.co/3AZlBxSRzg">pic.twitter.com/3AZlBxSRzg</a></p>&mdash; Gerald L (@dlareg49) <a href="https://twitter.com/dlareg49/status/1259452693866639360?ref_src=twsrc%5Etfw">May 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-{"height": 720, "html": "<iframe class=\"streamable-embed\" src=\"https://streamable.com/o/03abf\" frameborder=\"0\" scrolling=\"no\" width=\"1280\" height=\"720\" allowfullscreen></iframe>", "provider_name": "Streamable", "provider_url": "https://streamable.com", "thumbnail_url": "//thumbs-east.streamable.com/image/03abf.jpg?height=300", "title": "sala", "type": "video", "version": "1.0", "width": 1280}
-
 
 Using this method, I then compiled the same plots for the other goals in the dataset (the PC function failed to converge for 3 goals, didn't manage to investigate why), thinking that from this collection of pitch control gain plots 
 we can maybe identify certain characteristic "fingerprints" of how Liverpool score their goals. 
