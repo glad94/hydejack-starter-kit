@@ -2,7 +2,7 @@
 layout: post
 title: Liverpool Analytics Challenge
 description: >
-  
+  Praising the bitter rivals, with numbers.
 author: author1
 image: /assets/img/2020-07-20-Liverpool-FoT/trent_reuters.png
 noindex: true
@@ -47,7 +47,7 @@ For each sequence of events, I computed the pitch control values per 10 frames a
 Using this method, I then compiled the same plots for the other goals in the dataset (the PC function failed to converge for 3 goals, didn't manage to investigate why), thinking that from this collection of pitch control gain plots 
 we can maybe identify certain characteristic "fingerprints" of how Liverpool score their goals. 
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A collage of Liverpool&#39;s pitch control trends for some of their goals that I rather lazily stitched together in...powerpoint. <br><br>Might be cool plotting this for many more sequences/ individual players. <a href="https://twitter.com/hashtag/FoT?src=hash&amp;ref_src=twsrc%5Etfw">#FoT</a> <a href="https://t.co/nAfEyZZUj5">pic.twitter.com/nAfEyZZUj5</a></p>&mdash; Gerald L (@dlareg49) <a href="https://twitter.com/dlareg49/status/1259705669600473089?ref_src=twsrc%5Etfw">May 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![PL 1920](/assets/img/2020-07-20-Liverpool-FoT/Liv_PCG_goals.PNG)
 
 While the size of the dataset is too small for me to robustly infer anything, I think the main impression that I got was that Liverpool tend to gain the most control relatively evenly down the flanks during their successful attacking sequences.
 
@@ -56,5 +56,5 @@ All in all, while I didn't manage to come up with something truly novel for this
 and other budding enthusiasts the opportunity and resources to mess around with some highly coveted football tracking data. I wished to keep this post short but I think it's gone on longer than I anticipated initially already, so I'll just leave 
 my submitted presentation (which I modelled after an opposition "primer" of sorts) below for your viewing. Til next time ;) 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRXRtQFpr9TyFoVzQGXNUuDGrFuw-e8D2ndOwvkG2V-ptoImHaFr0lHtl3FS0G1tg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRXRtQFpr9TyFoVzQGXNUuDGrFuw-e8D2ndOwvkG2V-ptoImHaFr0lHtl3FS0G1tg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
