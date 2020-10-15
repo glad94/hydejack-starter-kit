@@ -21,7 +21,7 @@ I used data from Transfermarkt.com for this project, which provides the followin
 - Minute sub-ed out
 
 
-Scraping the data was with much to credit to the tutorial by [FCPython](https://fcpython.com/blog/introduction-scraping-data-transfermarkt). A still rather messy version of this code is available [here](https://github.com/glad94/footy-scraper). Should also mention that FCsStats released a [Python package](https://github.com/FCrSTATS/tyrone_mings) for scraping Transfermarkt very recently as well. 
+Scraping the data was with much to credit to the tutorial by [FCPython](https://fcpython.com/blog/introduction-scraping-data-transfermarkt). A still rather messy version of this code is available [here](https://github.com/glad94/footy-scraper). Should also mention that FCrSTATS released a [Python package](https://github.com/FCrSTATS/tyrone_mings) for scraping Transfermarkt very recently as well. 
 
 ## Centre-Backs
 
