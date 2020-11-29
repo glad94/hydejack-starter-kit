@@ -81,6 +81,45 @@ The data used for this section are as follows:
 
 The table below shows the top 15 players in Europe’s top 5 leagues (Premier League, La Liga, Bundesliga, Serie A, Ligue 1) with the highest cumulative JxT throughout the season (at least 900 minutes together). It should be no surprise that the #1 pair is De Bruyne-Sterling, with Man City having the most impressive league season that year finishing with a 100 pts. Messi-Suárez are also fairly sensible runner ups, with the duo helping Barcelona to a nearly unbeaten domestic season. Payet-Thauvin were a little surprising to me at first, but I then recalled that Thauvin had a smashing season (22G,14A in 34 in the league) which earned him a call up to the French World Cup squad. Payet himself would’ve been in Russia too if not for an unfortunate injury during the 2018 UEFA Europa League Final.    
 
+| Rank | Pair | Team | JxT | Shared Min. |
+|------|------|------|-----|-------------|
+|      |      |      |     |             |
+|      |      |      |     |             |
+|      |      |      |     |             |
+
+On a per 90 basis, the top two from before still appear in the top 15, but we now see the ever-swashbuckling Marcelo in both the first and third spots paired with two other playmakers. In 2nd place is Arsenal’s former focal points of threat creation, both of whom also appeared in the Premier League’s top 15 cumulative xT creators in Karun’s post. 
 
 
+#### Analysing team chemistry through JxT Networks
 
+JxT data can also be used to depict team chemistry over single or multiple matches via network analysis. By complimenting player pair JxT values with individual xT values; average xT creating positions and the number of JxT creating actions per pair, JxT networks visualise where the hubs of xT creation and strongest JxT links are in a team in a manner similar to passing networks. In my first post on Twitter with this visualisation, I depicted how Man Utd’s productivity and chemistry, especially in midfield, improved over the 2019/20 season after the arrival of Bruno Fernandes and subsequent return of Paul Pogba.   
+
+![MU 1920](/assets/img/2020-xx-xx-JxT/Man_Utd_JxT_Network.png)
+
+
+My second case study with this method looked at Arsenal’s JxT networks under Emery and Arteta in the 2019/20 league season. These showed that the changes were largely in Arsenal’s shape and attacking structure, whereas xT and JxT did not seem to differ much (if anything they seemed to create xT better under Emery). The data was also used to compute network centrality in terms of total JxT volume, which depicted Ceballos as being the hub under both managers, as well as a shared minutes matrix which showed how many minutes were shared between each selected eleven.  
+
+![MU 1920](/assets/img/2020-xx-xx-JxT/Arse_JxT_Network.png)
+
+![MU 1920](/assets/img/2020-xx-xx-JxT/Arse_JxT_Centrality.png)
+
+
+Beyond this, the analysis can be extended to the whole squad of the team to assemble a maximum-chemistry starting eleven and perhaps even identify the best substitutes to bring on based on a least chemistry reduced rule. Bransen and Van Haaren explored this in their paper in section 5. 
+
+#### Predicting JxT/90 for player recruitment 
+
+Another idea from the Player Chemistry paper that I’m still in the process of emulating is to apply JxT/90 for player recruitment purposes. Being able to predict how well any two players will play together can be a powerful tool. Although JxT/90 values between players that have never played together don’t exist, machine learning regression models offer us a tool for predicting hypothetical JxT/90 values. This is achieved by using player characteristics or statistics that are likely to influence chemistry as predictors in the feature engineering. 
+
+Since Bransen and Van Haaren reported that player role-based characteristics were particularly impactful (in contrast to cultural features), as a first guess (and also for convenience), I used the same features (2017/18 player stats from FBref) that [Parth Arthale used in his PCA model](https://twitter.com/parthathale/status/1291406486732595200?lang=en) to derive distinct playing styles and player similarity scores as the predictors. Each player (with at least 1000 minutes played) pair’s feature vector consisted of the mean and absolute difference of their respective features (i.e. for 112 features per player = 224 per pair). The dataset was then split into training (La Liga, Bundesliga, Serie A, Ligue 1), validation (10 Premier League teams) and test (remaining 10 Premier League teams) sets. 
+
+The XGBoost algorithm was used to train the regression model, with hyperparameters tuned on the validation set to optimise the validation RMSE. Against a naive baseline model which predicts JxT/90 to always be the average training set value with RMSE of 0.0263 on the test set, the trained model obtained a lower RMSE of 0.01802. 
+
+While I believe the model I have in hand can be further polished, let’s consider some use cases for it. Say Barcelona who were interested in procuring Antoinne Griezmann after the 2017/18 season would also like to consider alternatives in case the move fell through (it did...but then it didn’t). Barca’s recruitment team could use this model to predict JxT90 between their candidates and certain members of the squad that would play in close proximity to them. The figure below depicts predicted JxT/90 between several shortlisted players and prominent Barca midfielders and forwards. We see that the model predicts that Griezmann’s is far from the optimal choice for Barcelona chemistry-wise. 
+
+The question could also be flipped around for a scenario e.g. say Riyad Mahrez’s agent/agency who were looking for his big summer move in 2018 could’ve consulted such a tool to add a further dimension to identifying suitable clubs for him. While these two examples consider select teammates with which the predictions are made, the method can always be tweaked around to consider e.g. the method can always be tweaked around to consider e.g. overall lineups that would maximise overall JxT90 with the player in focus. 
+
+## Closing Thoughts
+
+One important aspect of chemistry that I’ve omitted so far is of course, the defensive side of it. If a club’s in the market for a centre-back to bolster their deference, surely a defense-oriented chemistry metric would take precedence over JxT. While this is something that Bransen and Van Haaren have modelled in their paper (see Joint Defensive Impact (JDI)), due to event data constraints the metric is something that’s more inferred rather than directly measured. I’ve not decided how to go about implementing this with xT yet, perhaps this is something that needs a little more care and could use the help of tracking data.  
+
+That aside, I’d like to empathise that JxT, like xT and many other similar models, are by no means perfect and understanding the results with context is always important. For instance, perhaps Griezmann could be unfavourably scored by JxT as metrics like xG (and I suppose xT too) tend to portray counter-attacking teams poorly (as such teams would have fewer ball actions then average). Would a possession adjusted score maybe give a fairer reflection? Or is it fair to tinker with the raw score in the first place? Additionally, the predictive model and the predictions made above relied on just a season’s worth of data. I’d think clubs typically consider a longer time horizon than that. Last but not least, the JxT metric is purely performance-based, but performances aren’t solely dependent on the players themselves. Tactics, the manager, overall team quality are just some factors that influence performance. Thus, a truly accurate picture of player chemistry is really complicated and just like football analytics as a whole, there will surely be more to come. 
