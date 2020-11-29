@@ -46,11 +46,23 @@ With our definition of joint interaction actions settled, all that’s left is t
 
 2. Rewards actions independent of the end outcome of the possession (i.e. although Messi’s shot is counted as part of the interaction sequence, no reward is assigned to it).
 
-Finally, let’s put everything together into several formulas for better clarity. 
+Finally, let’s put everything together into several formulas for better clarity. For a single match: 
+
+\begin{equation*}
+JxT_{match} = \sum^{J}_{j} (\sum^{I}_{i^{p}, i^{q}+1, i^{p}+2, ...} (\Delta xT)_{i})_{j}
+\end{equation*}
+
+where indices $i$ refer to consecutive events alternating between players $p$ and $q$, $\Delta xT$ the change in xT per event and $j$ the index denoting each event sequence as a whole. 
 
 ### JxT for player comparisons
 
 While JxT can be applied for player pairs over single matches up to a season, to enable a fair comparison between pairs who spent different amounts of time on the pitch together within a season, we introduce JxT/90 which weighs total JxT against the pair’s shared minutes: 
+
+\begin{equation*}
+JxT/90 = \frac{ sum^{M}_{m} JxT_{m} } { sum^{M}_{m} min_{m} }
+\end{equation*}
+
+where $min$ is the total minutes played together per match $m$. 
 
 ### Subtleties (comparison with JOI)
 
