@@ -34,6 +34,7 @@ With that in mind, we thus want to formulate a metric that:
 
 Let’s try to gain some intuition for what JxT should look like from event-level data (remember, event-level data only involves actions on the ball, so actions like off-ball runs aren’t logged). I’ll use a ridiculous goal that screams Player Chemistry to me.
 
+![MU 1920](/assets/img/2020-xx-xx-JxT/messi_alves.gif)
 
 Point 2 in the framework requires us to define what constitutes joint interaction actions in event data. We can first take the literal meaning of **“Joint”** and concatenate all events that originate from the two players. Taking Messi and Alves from the above example, that’s simply every event by them. Next, we need to further subset this sequence to contain **“Interaction”** events. A first logical choice would be the passes between each other. Additionally, we should also consider the immediate events that arise from the preceding exchange (e.g. 1. Messi’s pass to Xavi (after receiving Alves’s pass), 2. Messi’s dribble after receiving Alves’s pass). With event data, these requirements are satisfied by defining an interaction sequence to be consecutive events alternating between the two players. Using these event filters, we can see the events which constitute Messi (M)-Alves (A)’ joint interaction actions to then be something like:
 
@@ -81,13 +82,43 @@ The data used for this section are as follows:
 
 The table below shows the top 15 players in Europe’s top 5 leagues (Premier League, La Liga, Bundesliga, Serie A, Ligue 1) with the highest cumulative JxT throughout the season (at least 900 minutes together). It should be no surprise that the #1 pair is De Bruyne-Sterling, with Man City having the most impressive league season that year finishing with a 100 pts. Messi-Suárez are also fairly sensible runner ups, with the duo helping Barcelona to a nearly unbeaten domestic season. Payet-Thauvin were a little surprising to me at first, but I then recalled that Thauvin had a smashing season (22G,14A in 34 in the league) which earned him a call up to the French World Cup squad. Payet himself would’ve been in Russia too if not for an unfortunate injury during the 2018 UEFA Europa League Final.    
 
-| Rank | Pair | Team | JxT | Shared Min. |
-|------|------|------|-----|-------------|
-|      |      |      |     |             |
-|      |      |      |     |             |
-|      |      |      |     |             |
+**Rank**|**Pair**|**Team**|**JxT**|**Shared Min.**
+:-----:|:-----:|:-----:|:-----:|:-----:
+1|De Bruyne-Sterling|Man City|4.107|2391
+2|Messi-Suárez|FC Barcelona|3.889|2538
+3|Payet-Thauvin|Marseille|3.79|2041
+4|Kessié-Suso|AC Milan|3.515|2696
+5|Sabaly-Malcom|G. Bordeaux|3.468|2620
+6|Fàbregas-E. Hazard|Chelsea|3.34|1773
+7|T. Hazard-Stindl|Bor. M'gladbach|3.281|2633
+8|Brozović-Perišić|Inter|3.269|1895
+9|Soares-Tadić|Southampton|3.256|2382
+10|Hamšík-Insigne|SSC Napoli|3.249|2133
+11|Eriksen-Kane|Spurs|3.242|2900
+12|De Bruyne-Silva|Man City|3.013|2216
+13|Freuler-Gómez|Atalanta|2.89|2465
+14|Silva-Sterling|Man City|2.887|1796
+15|Marcelo-Kroos|Real Madrid|2.83|2110
 
 On a per 90 basis, the top two from before still appear in the top 15, but we now see the ever-swashbuckling Marcelo in both the first and third spots paired with two other playmakers. In 2nd place is Arsenal’s former focal points of threat creation, both of whom also appeared in the Premier League’s top 15 cumulative xT creators in Karun’s post. 
+
+**Rank**|**Pair**|**Team**|**JxT/90**|**Shared Min.**
+:-----:|:-----:|:-----:|:-----:|:-----:
+1|<span style="color:blue">Marcelo-Isco</span>|Real Madrid|0.228|1086
+2|Özil-Sánchez|Arsenal|0.205|1116
+3|Marcelo-Asensio|Real Madrid|0.188|935
+4|Fàbregas-Hazard|Chelsea|0.17|1773
+5|Payet-Thauvin|Marseille|0.167|2041
+6|Brozović-Perišić|Inter|0.155|1895
+7|De Bruyne-Sterling|Man City|0.155|2391
+8|Kolarov-Perotti|AS Roma|0.154|1523
+9|Iniesta-Messi|FC Barcelona|0.15|1599
+10|Ramos-Marcelo|Real Madrid|0.146|1404
+11|D. Silva-Sterling|Man City|0.145|1796
+12|López-Thauvin|Marseille|0.139|1115
+13|Schulz-Kramarić|TSG Hoffenheim|0.139|1307
+14|Messi-Suárez|FC Barcelona|0.138|2538
+15|Hamšík-Insigne|SSC Napoli|0.137|2133
 
 
 #### Analysing team chemistry through JxT Networks
