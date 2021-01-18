@@ -11,17 +11,16 @@ tags: [Football, Premier League, Analytics]
 ---
 
 Berbatov’s 2010/11* season never fails to get an asterisk next to it when discussed amongst football fans and for good reason I suppose. 
-While his 20 goals to share the Premier League Golden Boot with Carlos Tevez looks good on paper, the fact that 11 of those goals came in 3 matches 
-(Liverpool, Blackburn, Birmingham) can’t help but make you wonder, “what the hell was he doing in the other 35?”. Berbatov began the season on the front foot, scoring 3 goals 
-in 4 before his hat-trick against the enemy. However, this was meekly followed up by a barren streak of 7 matches before compensating with 5 goals against Blackburn. 
-After his most consistent scoring run with 7 in his next 7, Berbatov’s United career arguably only went downhill from there. Just 2 then in his last 12, as Ferguson began to 
+While his 20 goals to share the Premier League Golden Boot with Carlos Tevez looks good on paper, the remarkable fact that **11 of those goals came in 3 matches** 
+(Liverpool, Blackburn, Birmingham) is a rather glaring blot on that record. Berbatov began the season on the front foot, scoring 3 goals 
+in 4 before his hat-trick against the enemy. However, this was meekly followed up by a barren streak of 7 matches before he compensated with 5 goals against Blackburn. 
+After his most consistent scoring run with 7 in his next 7, Berbatov’s United career arguably only went downhill. Just 2 then in his last 12, as Ferguson began to 
 favour the partnership of a resurgent Wayne Rooney just behind the increasingly prominent Chicharito. Berbatov’s blank against Man City in the FA Cup Semi Final where he missed 
 a series of chances proved to be the final straw, which culminated in Michael Owen (who had just 2 league goals all season) being chosen over him on United’s bench for the 
 Champions League Final against Barcelona.
 
 
-While I happen to remember Berbatov’s 2010/11 season for being highly inconsistent because I lived and watch through those years, I wondered if there was a way to easily quantify 
-whether a player was a consistent performer (it doesn’t necessarily have to be in terms of goals) and put statements like “Gary Neville would give you at least a 7/10 every week” 
+While I happen to remember Berbatov’s 2010/11 season for being highly inconsistent because I lived and watch through those years, I wondered if there was a way to easily quantify whether a player was a consistent performer (it doesn’t necessarily have to be in terms of goals) and put statements like “Gary Neville would give you at least a 7/10 every week” 
 to test. While something like “No. of games scored in / Goals” gives some sort of picture, it misses out on the actual game-on-game variability that should be considered. 
 BA Analytics mentioned that the closest approach [he’s often seen is to use rolling averages over time](https://twitter.com/Blades_analytic/status/1348544608633032704) (coincidentally then I came across 
 this [post yesterday by James Yorke at Statsbomb](https://twitter.com/jair1970/status/1350154256721072132)), but I was still interested to find something like a single number or two, something a little more “compact”. Hence, after a little exploration, we find ourselves 
@@ -79,7 +78,8 @@ the results.
 
 ## Result Analysis
 
-I computed CV and AABS for the top-30 scorers of the Premier League and La Liga from the 2015/16 to the 2019/20 season (all numbers from StatsBomb via FBref). Here’s the top 20 players sorted by CV. 
+I computed CV and AABS for the top-30 scorers of the Premier League and La Liga from the 2015/16 to the 2019/20 season (all numbers from StatsBomb via FBref). Different seasons
+are separated too just for comparison purposes, the choice of time range can be flexible. Here’s the top 20 players sorted by CV. 
 
 ![PL 1920](/assets/img/2021-01-18-Consistency/CVs.png)
 
