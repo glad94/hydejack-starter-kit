@@ -79,7 +79,7 @@ the results.
 ## Result Analysis
 
 I computed CV and AABS for the top-30 scorers of the Premier League and La Liga from the 2015/16 to the 2019/20 season (all numbers from StatsBomb via FBref). Different seasons
-are separated too just for comparison purposes, the choice of time range can be flexible. Here’s the top 20 players sorted by CV. 
+are separated too just for comparison purposes, the choice of time range can be flexible. Here’s the top 15 players sorted by CV. 
 
 ![PL 1920](/assets/img/2021-01-18-Consistency/CVs.png)
 
