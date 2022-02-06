@@ -38,6 +38,9 @@ keywords:              []
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/img/me.jpg
 
+# Image of website?
+image:                 /assets/img/blog_home.png
+
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   name:                Gerald Lim
