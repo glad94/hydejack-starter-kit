@@ -39,7 +39,8 @@ keywords:              []
 logo:                  /assets/img/me.jpg
 
 # Image of website?
-image:                 /assets/img/blog_home.png
+image:                 
+  path:                  /assets/img/blog_home.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
