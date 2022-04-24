@@ -54,5 +54,5 @@ All in all, while I didn't manage to come up with something truly novel for this
 and other budding enthusiasts the opportunity and resources to mess around with some highly coveted football tracking data. I wished to keep this post short but I think it's gone on longer than I anticipated initially already, so I'll just leave 
 my submitted presentation (which I modelled after an opposition "primer" of sorts) below for your viewing. Til next time ;) 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRXRtQFpr9TyFoVzQGXNUuDGrFuw-e8D2ndOwvkG2V-ptoImHaFr0lHtl3FS0G1tg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://drive.google.com/file/d/1SFgzST4ayP23_1MiDvbrCQTT_QDlSg5v/view?usp=sharing" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
