@@ -2,7 +2,7 @@
 layout: post
 title: Liverpool Analytics Challenge
 description: >
-  Praising the bitter rivals, with numbers.
+  Data simping for Liverpool.
 author: author1
 image: /assets/img/2020-07-20-Liverpool-FoT/trent_reuters.png
 noindex: true
