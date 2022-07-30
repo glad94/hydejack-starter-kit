@@ -18,16 +18,12 @@ So, what have the data options for the fuzzy ball-hitting sport been? Besides th
 My method of data collection was, for lack of a better word, primitive. In short, I edited a Tennis Court into this [event data collection web-app](https://fcpythonvideocoder.netlify.app/) created by FC Python. You might be thinking, wait...so every shot was manually traced by hand - that's retarded (you're not wrong). Thankfully, my new laptop that I recently purchased had a touchscreen and came with a stylus - really useful for this purpose. While I was aware of alternative (and smarter) collection methods, e.g. overlaying the footage in a software like ARCGIS as mentioned in [this article](https://www.esri.com/arcgis-blog/products/arcgis-desktop/analytics/using-arcgis-for-sports-analytics/), or via homography techniques such as Direct Linear Transforms which Rob used to collect his dataset; my unfamiliarity with those methods + my curiosity over how much manual tracing I could withstand kept me on this less sophisticated path.
 
 In total, I traced the shot data over a span of about 2 weeks and probably 20+ hours or so - not too terrible a ratio for a 4+hour long 4 set match I suppose. Despite the task being rather repetitive and menial, I definitely came away with some takeaways from this experience:
-
 ### Data Collection isn't easy
 Although the role of computer vision continues to grow in data companies, the human contribution is still an indispensable component of the overall workflow, be it in the collection process itself or for sanity checking/quality control purposes. As Statsbomb themselves put it, [*"Humans and machines combined has always produced better results than humans and machines working independently"*](https://statsbomb.com/news/what-happened-at-statsbomb-evolve-360-data-quality-obv-and-more/). [This article](https://fivethirtyeight.com/features/the-people-tracking-every-touch-pass-and-tackle-in-the-world-cup/) from 2014 described the hand-eye coordination required by Opta's data loggers as being that of avid Playstation gamers, in addition to five-hour selection tests and probation periods of up to a month before being "match-ready". Given the pace at which I was the going and the frustrations endured, I'm probably far from being up to the task in a professional setting.
-
 ### And far from perfect
 My collection method probably didn't help here, but staying consistent with my logging of the positional data was a huge challenge. This was especially so for ball-racket contact points where I lacked the visual reference of the court margins. Perhaps in the future, I'd try to collect the data in a more precise manner - pasting a ruler or two over my monitor might even help. 
-
 ### Curse of Knowledge
 Another challenge that would've been reduced if I used a proper court overlay/homography technique was the interference of my own biases resulting from my existing knowledge of the two's playstyles and strengths. For example, Djokovic's return-of-serve, widely regarded as possibly the greatest of all time, played in my head on almost every occasion when he landed a return in past the service line. This may have unfortunately caused me to systematically record a number of returns as deeper than I would have if Nadal had hit them. Another example would be knowing that Nadal tends to play from a deeper position, hence could I possibly have been thinking that he's stood deeper than he actually is? 
-
 ### Definition Dilemma
 You're always going to find irregularities in data between different providers and I've come through this experience with greater empathy for those who have to decide on the "truth". A much debated statistic in tennis is the Unforced/Forced-Error differentiation, with some analysts even advocating to only deal with errors as a whole. I tried to be as consistent as I could here and only counted unforced errors as those where I reasonably judged the offender to have time to set up for his shot. I ended up being much more lenient with 61 unforced errors logged than the official count of 96. 
 
@@ -55,7 +51,6 @@ Before I get to the match review, a shoutout to other analytically-focused revie
 - [Djokovic vs. Nadal French Open 2022 QF \| Post-Match (Gill Gross)](https://www.youtube.com/watch?v=W4a9MQfOGCw&ab_channel=GillGross)
 
 This was the 59th match (18th in grand slams, 10th at this tournament) between Nadal and Djokovic with the Serb leading the h2h 30-28. Keen observers have noted that since 2018 (post both players' respective early 30s slumps) this rivalry has largely been surface-skewed, with Nadal leading 4-1 on clay and Djokovic 3-0 on the other surfaces. As dusk set in and the summer air cooled to a blanket-requiring chill, a 4H12M-long battle unfolded which captivated the Chatrier crowd again with every stroke and grunt. In the end, the King of Clay claimed his revenge with a 6-2, 4-6, 6-2, 7-6(4) victory and stayed on course to an eventual 14th Roland Garros title. While it may not have reached the dramatic peaks of last year's epic, there was definitely no shortage of tension and moments of sheer brilliance. With the aid of the collected data, here are 10 noteworthy dynamics that tell the story of this contest. 
-
 ### 1. Serving up a Storm
 Djokovic is generally regarded as the stronger server of the two (see Wimbledon 2018), although clay negates this advantage as a slower playing surface. Nadal edged Djokovic in terms of 1st serves made in-play (71.0% vs 67.9%) and 1st serve points won percentage (65.3% vs 64.2%), while committing the same number of double faults (4). Although the stat sheet showed that Nadal served 2 fewer aces than Djokovic (3 to 5), he induced more forced-errors from his first serve (14 vs 9). As seen in the 2 figures below, Djokovic split his 1st serves from both sides relatively evenly down the T and out wide (see Appendix for binned % distributions). His Deuce-Wide and AD-T serves (the more "natural" directions for a right-hander) were slightly more successful than their opposites. 
 
@@ -82,7 +77,6 @@ I also went through the trouble of recording down every single visible serve spe
 {:.figure}
 
 Djokovic's 1st serve averaged 184 km/h compared to Nadal's 181 km/h and appears to have 2 "clusters" across all sets. The "slow" clusters in the 150-170 km/h range were largely from his sliced Deuce serves out wide, where raw driving pace was sacrificed for spin/direction. Curiously, Nadal's median 1st serve speeds trended downwards as the match went on. Nadal's more aggressive second serve which he has [adopted in 2022](https://www.atptour.com/en/news/nadal-australian-open-2022-serve-feature) was on display again, as he boasted an average speed of 154 km/h (up by 8 km/h from 2021) against Djokovic's 138 km/h. In fact, if you squint closely, you can see that he even registered 2 second serves that were faster than a number of his firsts. 
-
 ### 2. Novak's streaky Return feat. a Nuclear Peak
 While Nadal poses a slightly better historical % return points won statistic, Djokovic's return-of-serve is widely acknowledged as the much more aggressive and greater shot, with some critics going as far as to term it as his "Third Serve". The depth and precision of his first serve return depicted below paints the picture of yet another world class returning display. 
 
@@ -112,10 +106,7 @@ While Djokovic's overall return game was below average and inconsistent as a who
 
 
 Despite seemingly having the momentum going into the third set, Djokovic's level proved to be a purple patch as he got broken in the first game and conceded the third set 2-6 in 41 minutes. His return points won % slumped back down to the 30s after redlining to 50% in the second. 
-
-
 ### 3. Serve+1 Success
-
 In his match report, Jack Edward (i.e. On The Line Tennis) had disproved Goran Ivanisevic's (Djokovic's coach) odd post-match reflection about how the cooler night conditions hampered Djokovic's ability to win free points with his serve. To add to this point, we observe from the graphic below that Djokovic's serve did give him the upper hand in the subsequent "+1" shot department. 
 
 <p align="center">
@@ -131,7 +122,6 @@ Despite spraying more unforced-errors, he compensated with 15 winners to Nadal's
 {:.figure}
 
 ### 4. Rafa locks Novak in Backhand-side Jail
-
 For a game plan that relies so heavily on the forehand, Nadal's 2021 defeat was remarkable in that it was the first time in their clay rivalry where he hit more backhand groundstrokes than forehands, and also hit more backhands than Djokovic. Although Djokovic has arguably the best backhand to match up against the Nadal forehand, over the long term it still is largely a net negative to rely on these rally exchanges as a viable strategy, especially so on clay where Nadal's topspin is at its most vicious. The heat map belows shows the breakdown of all topspin groundstroke locations (of the ball) for the two players over the backcourt and baseline areas where these shots are most commonly struck. 
 
 <p align="center">
@@ -140,8 +130,6 @@ For a game plan that relies so heavily on the forehand, Nadal's 2021 defeat was 
 {:.figure}
 
 Immediately we observe that Nadal did the work to ensure that a 2021 repeat wouldn't happen by forcing Djokovic to hit 40% of his groundstrokes from his backhand side. Successfully pinning Djokovic to this wing puts him under sustained pressure over deciding whether to continue dueling crosscourt against his forehand (which is statistically unlikely to break down on clay) or, opt for the lower percentage down the line shot which, if it lands short, probably concedes a putaway inside-out shot from Nadal. 
-
-
 ### 5. Contrasting Backhand Fortunes
 Continuing the theme of the forehand-backhand pendulum, we take a look at how Djokovic statistically performed with his backhand topspin groundstrokes once engaged into a rally (we already know it wasn't great, given that we just saw how he wasn't able to gain ground away from the backhand side). 
 
@@ -162,10 +150,7 @@ On the contrary, Nadal's backhand held firm throughout as he was able to repel D
 {:.figure}
 
 His 17 errors in total were just one fewer than Djokovic's unforced error count. Jack pointed out in his article that Nadal only followed a Djokovic forehand cross-court with his own backhand cross-court 8% of the time, down from 29% in 2021. We see in his backhand topspin shot map below that he achieved a fairly even split between backhands sent cross-court and down the line. He even enjoyed more positive point-ending success from his down the line shots as evidenced by his winners, induced forced-errors and assists count. Lastly, his backhand shot map also depicts the baseline dominance that he was able to attain, with an average backhand strike location of 2.81 meters (horizontally) from the center compared to 3.37 meters for Djokovic. 
-
-
 ### 6. Djokovic fails to get Forehand angle, Nadal unleashes Down the Line
-
 Sharp-angled cross-court forehands were the bread and butter of Djokovic's blueprint against Nadal last year. Needless to say, he didn't enjoy much success with the same play this time around. The shot map below shows all of Djokovic's topspin forehand attempts (excluding returns) that landed within the highlighted bounding box and hence, were classified under the aforementioned shot category. 
 
 <p align="center">
@@ -208,7 +193,6 @@ A couple of devastating 1-2 punches here to add to the many that Djokovic has be
 
 
 ### 7. Djokovic's Dropshot Disappointment
-
 The backhand drop-shot has evolved over time into a formidable weapon in Djokovic's arsenal, featuring in several all-time clutch points which have pushed his case as the mental GOAT - just see this crucial set point save from last year's encounter. 
 
 <p align="center">
@@ -231,7 +215,6 @@ The most offending attempt, came at an important juncture during the fourth set 
 {:.figure}
 
 ### 8. Slice Claydal at your peril
-
 Ah the slice - the shot that I only bothered to start learning properly 20 years after I first picked up a racket. 
 While Nadal did lose more points in which the backhand slice was deployed than win, it was still a relatively healthy ratio considering that he often plays them during the neutral/defensive phase. A good number of them accomplished the desired depth down the line to help him reverse the tide of the point and win it eventually.  
 
@@ -249,9 +232,7 @@ Djokovic's backhand slice has improved over the years to become a valuable asset
 {:.figure}
 
  *That single point that he won from a backhand slice? Amusingly that was actually a winner from the forecourt. In fact, Tennis Abstract didn't even log that shot as one, hence his backhand slice success rate stands at 0% on their site.*
-
 ### 9. Pressure Plays
-
 Scorelines between these two on clay can flatter to deceive - look no further than their 2020 Roland Garros final, which began with the "most competitive ever" 6-0 set to Nadal which lasted an absurd 45 minutes. Break points will be plentiful on this surface and how one handles the pressure can draw the fine line between victory, defeat or even a scoreboard trashing. On this night, Djokovic saved 10/17 of his break points faced whereas Nadal saved 8/12. In the tiebreak, where every point is essentially a break point, Nadal won 1 more point off Djokovic's serve than vice versa to clinch it 7-4. 
 
 This analysis is extended by analysing how each player hit on these so-called pressure points (i.e. their breakpoints faced + tiebreak points) with their forehand topspin groundstrokes (excluding returns). 
@@ -269,7 +250,6 @@ Djokovic only hit one outright forehand winner and was rather unsuccessful at ge
 {:.figure}
 
 ### 10. Counterpunching Classico
-
 For my last point I attempted to examine both player's abilities to turn defence into attack by deriving these occurrences from the recorded positional data. First, I employed a set of rules to filter out rally shots that can be classified as being in the attack phase.  
 
 - Consider only rally shots (i.e. not serves or returns )
@@ -307,8 +287,6 @@ From the score and what we've learnt so far, Djokovic obviously didn't fare as w
 {:.figure}
 
 Three other characteristics can also be observed from his shot map, 1) he achieved much less depth on these shots than Nadal; 2) much fewer shots were directed back to the middle; 3) the highest amount of defensive pressure was applied by Nadal on Djokovic's backhand side although both wings were defended relatively evenly i.e. 4 vs 5 forced errors and 10 vs 7 losing-point assists from the backhand and forehand wings respectively. 
-
-
 ### End Thoughts and Future Work
 Despite the substantial amount of time spent collecting this data and producing an analytically-focused writeup, I've probably only scratched the surface of what can be done with this dataset. With positional data for every single shot, I'm hoping to at least experiment building a proof-of-concept expected shot value model and try applying that to a subset of the match; e.g. what can the first three sets worth of groundstrokes tell us about how much value each groundstroke in the fourth was worth? Another meticulous rewatch of the match could also enable me to add contextual or "phase of play" labels to each stroke and from there, come up with a better algorithm for phase determination or even design a proof-of-concept machine learning model for that purpose. I might also have a full crack at that RG 2021 Final dataset and explore the possibilities that the z-coordinates have to offer.
 
