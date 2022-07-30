@@ -292,10 +292,7 @@ Despite the substantial amount of time spent collecting this data and producing 
 
 Closing off, I hope this was at least an interesting (and not too long-winded) read for you, whether you are a data enthusiast, a casual fan, a tennis nerd or a random passerby. Last but not least, I'm glad I kept to my previous post's promise to not take another year+ before the next. With that, I leave you with one last shot map, depicting this match's winning moment.
 
-<p align="center">
-  <img src="/assets/img/2022-07-30-Collecting-Data/11_match_winner.png">
-</p>
-{:.figure}
+![Half-width image](/assets/img/2022-07-30-Collecting-Data/11_match_winner.png){: width=50% height=50%}{:.centered}
 
 ### Appendix
 Here are some other figures that were omitted from the main text.
