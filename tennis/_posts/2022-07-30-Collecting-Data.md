@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collecting my own Tennis Event Data | Nadal-Djokovic #59 Data Story
+title: Collecting my own Tennis Event Data | Nadal-Djokovic \#59 Data Story
 description: >
   Manual data collection is hard, no?
 author: author1
@@ -52,7 +52,7 @@ Before I get to the match review, a shoutout to other analytically-focused revie
 
 - [How Rafael Nadal defeated Novak Djokovic at the 2022 French Open (On The Line Tennis)](https://www.onthelinetennis.uk/issue86/)
 - [Rafole reversion to the mean in Paris (The Racquet)](https://theracquet.substack.com/p/rafole-reversion-to-the-mean-in-paris?s=w)
-- [Djokovic vs. Nadal French Open 2022 QF | Post-Match (Gill Gross)](https://www.youtube.com/watch?v=W4a9MQfOGCw&ab_channel=GillGross)
+- [Djokovic vs. Nadal French Open 2022 QF \| Post-Match (Gill Gross)](https://www.youtube.com/watch?v=W4a9MQfOGCw&ab_channel=GillGross)
 
 This was the 59th match (18th in grand slams, 10th at this tournament) between Nadal and Djokovic with the Serb leading the h2h 30-28. Keen observers have noted that since 2018 (post both players' respective early 30s slumps) this rivalry has largely been surface-skewed, with Nadal leading 4-1 on clay and Djokovic 3-0 on the other surfaces. As dusk set in and the summer air cooled to a blanket-requiring chill, a 4H12M-long battle unfolded which captivated the Chatrier crowd again with every stroke and grunt. In the end, the King of Clay claimed his revenge with a 6-2, 4-6, 6-2, 7-6(4) victory and stayed on course to an eventual 14th Roland Garros title. While it may not have reached the dramatic peaks of last year's epic, there was definitely no shortage of tension and moments of sheer brilliance. With the aid of the collected data, here are 10 noteworthy dynamics that tell the story of this contest. 
 
@@ -248,7 +248,7 @@ Djokovic's backhand slice has improved over the years to become a valuable asset
 </p>
 {:.figure}
 
- *That single point that he won from a backhand slice? Amusingly that was actually a winner from the fore-court. In fact, Tennis Abstract didn't even log that shot as one, hence his backhand slice success rate stands at 0% on their site.*
+ *That single point that he won from a backhand slice? Amusingly that was actually a winner from the forecourt. In fact, Tennis Abstract didn't even log that shot as one, hence his backhand slice success rate stands at 0% on their site.*
 
 ### 9. Pressure Plays
 
