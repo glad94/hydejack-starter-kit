@@ -270,6 +270,7 @@ We see from Nadal's defensive shot map that he managed to win 49.1% of points an
 <p align="center">
   <img src="/assets/img/2022-07-30-Collecting-Data/10b_nadal_DEF.png">
 </p>
+The percentages below the baseline show how often shots were hit from each demarcated contact point zone.
 {:.figure}
 
 He was also most successful at getting depth and centrality from shots received down the middle, winning 60% of points in which these shots were played as well as 5 winners. For a little bit of sanity checking, here's one of those winners. 
@@ -292,13 +293,13 @@ Despite the substantial amount of time spent collecting this data and producing 
 
 Closing off, I hope this was at least an interesting (and not too long-winded) read for you, whether you are a data enthusiast, a casual fan, a tennis nerd or a random passerby. Last but not least, I'm glad I kept to my previous post's promise to not take another year+ before the next. With that, I leave you with one last shot map, depicting this match's winning moment.
 
-
+<p align="center">
 <iframe src="/assets/img/2022-07-30-Collecting-Data/11_match_winner_full.png" 
-    margin: auto
     width="250%"
     height="250%"
     frameborder="0">
 </iframe>
+</p>
 
 
 ### Appendix
