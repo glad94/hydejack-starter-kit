@@ -176,7 +176,7 @@ Sharp-angled cross-court forehands were the bread and butter of Djokovic's bluep
 While he was positive on winners-errors and won-lost assists, he only managed to find these spots in 33 points, of which he won just 48.5%. Besides an inability to execute, the plan was also hampered by Nadal's previously discussed insistence at minimising consecutive cross-court exchanges with his backhand. 
 
 <p align="center">
-  <img src="/assets/img/2022-07-30-Collecting-Data/6d_djoab_fhcc_fhcc.gif">
+  <img src="/assets/img/2022-07-30-Collecting-Data/6d_djoab_fhcc.gif">
 </p>
 {:.figure}
 
