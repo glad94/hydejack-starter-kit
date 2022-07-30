@@ -44,7 +44,7 @@ In this half of the post, I've taken the collected data to present a data and vi
 Thanks to Nadal's abdomen, this edition of Nadal vs Djokovic remains the most recent and hopefully, still worthy of a revisit. Lamented by many for being drawn as a mere quarter final, Djokovic had come into this meeting as arguably the in-form player, having coasted to the Rome Masters title and not dropped a set since his closely-fought defeat to Carlos "The Real Deal" Alcaraz in Madrid just under a month ago. After an infamous and inconsistent start to the year, the then World #1 appeared to finally be back in grand slam-contending groove. Nadal on the other hand, despite a blistering 20-0 start to 2022, wasn't giving the bookmakers much confidence with lingering doubts over his Mueller–Weiss syndrome, as well as his overall fitness following a rib injury. Furthermore, he had just come through a 4H23M long tussle with Felix Auger-Aliassime in just his third 5-setter on the Parisian Clay, whereas Djokovic's contest with Diego Schwartzman lasted a mere 2H17M. Did I not mention the last meeting between these two yet - a monumental 4 set victory for Djokovic a year ago in the semi final.  
 
 <p align="center">
-  <img src="/assets/img/2022-07-30-Collecting-Data/0_djoab_2021.jpg">
+  <img src="/assets/img/2022-07-30-Collecting-Data/0_djoab_2021.JPG">
 </p>
 {:.figure}
 
@@ -176,7 +176,7 @@ Sharp-angled cross-court forehands were the bread and butter of Djokovic's bluep
 While he was positive on winners-errors and won-lost assists, he only managed to find these spots in 33 points, of which he won just 48.5%. Besides an inability to execute, the plan was also hampered by Nadal's previously discussed insistence at minimising consecutive cross-court exchanges with his backhand. 
 
 <p align="center">
-  <img src="/assets/img/2022-07-30-Collecting-Data/6d_djoab_fhcc_CCFH.gif">
+  <img src="/assets/img/2022-07-30-Collecting-Data/6d_djoab_fhcc_fhcc.gif">
 </p>
 {:.figure}
 
@@ -226,7 +226,7 @@ Perhaps the lack of big match experience over the past 9 months can be blamed, a
 The most offending attempt, came at an important juncture during the fourth set tie break. If last year's effort felt like a spellbinding trick, this one felt almost like a pitiful plea towards Nadal to put him out of his misery. 
 
 <p align="center">
-  <img src="/assets/img/2022-07-30-Collecting-Data/7c_djoab_drop.png">
+  <img src="/assets/img/2022-07-30-Collecting-Data/7c_djoab_drop.gif">
 </p>
 {:.figure}
 
@@ -315,7 +315,7 @@ Despite the substantial amount of time spent collecting this data and producing 
 Closing off, I hope this was at least an interesting (and not too long-winded) read for you, whether you are a data enthusiast, a casual fan, a tennis nerd or a random passerby. Last but not least, I'm glad I kept to my previous post's promise to not take another year+ before the next. With that, I leave you with one last shot map, depicting this match's winning moment.
 
 <p align="center">
-  <img src="/assets/img/2022-07-30-Collecting-Data/11_match_winner.png">
+  <img src="/assets/img/2022-07-30-Collecting-Data/11_match_winner.png" width=50% height=50%>
 </p>
 {:.figure}
 
