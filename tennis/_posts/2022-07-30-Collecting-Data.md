@@ -294,8 +294,9 @@ Closing off, I hope this was at least an interesting (and not too long-winded) r
 
 
 <iframe src="/assets/img/2022-07-30-Collecting-Data/11_match_winner_full.png" 
-    width="100%"
-    height="100%"
+    margin: auto
+    width="250%"
+    height="250%"
     frameborder="0">
 </iframe>
 
