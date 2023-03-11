@@ -142,7 +142,7 @@ Continuing the theme of the forehand-backhand pendulum, we take a look at how Dj
 
 Excluding service returns, Djokovic played 214 backhand topspin groundstrokes versus Nadal's 177. Even factoring in points won via errors immediately forced by his backhand, he is still a 22-26 = -4 in the "winners"-error count. Uncharacteristic unforced errors were sprayed down both wings and even when his stroke did not immediately end the point, more often than not did they hand the initiative back to Nadal for a winner or error-forcing shot of his own. 
 
-On the contrary, Nadal's backhand held firm throughout as he was able to repel Djokovic's attempts to corner him in this wing. 
+Contrary to what happened last year, Nadal's backhand held firm throughout as he was able to repel Djokovic's attempts to corner him in this wing. 
 
 <p align="center">
   <img src="/assets/img/2022-07-30-Collecting-Data/5b_nadal_BH.png">
