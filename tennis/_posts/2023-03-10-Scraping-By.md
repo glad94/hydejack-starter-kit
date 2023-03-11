@@ -21,7 +21,7 @@ In the months since my manual data collection project, I spent most of my hobby-
 
 Since anything(?) on the internet can be scraped, there was an opportunity to collect a decent sample of tennis data to fuel more analytical explorations (much like Peter Tea [did using the court vision data from Roland Garros 2021]((https://petertea.netlify.app/project/serve_direction_eda/))). Initially, I ran into encrypted source data, so I attempted a selenium-automation approach. Here's how that went...
 
-1. Scraper version 1 was actually pretty straightforward selenium; just locate all the ball elements and we're good to go. The challenge here was extracting the court dimensions and knowing what data transformations were needed.
+1\. Scraper version 1 was actually pretty straightforward selenium; just locate all the ball elements and we're good to go. The challenge here was extracting the court dimensions and knowing what data transformations were needed.
 
 <p align="center">
   <img src="/assets/img/2023-03-10-Scraping-By/charlie_serves.png">
@@ -29,16 +29,16 @@ Since anything(?) on the internet can be scraped, there was an opportunity to co
 Charlie needs to spot better
 {:.figure}
 
-2. The above gave me just the serve bounce coordinates and of course that isn't nearly enough. Ball speed, serve type, point context, etc... I had to revamp more or less all the automation to chronologically cycle through the match timeline and go ball-to-ball for information.
+2\. The above gave me just the serve bounce coordinates and of course that isn't nearly enough. Ball speed, serve type, point context, etc... I had to revamp more or less all the automation to chronologically cycle through the match timeline and go ball-to-ball for information.
 
-3. This code was working okay for single matches but was breaking down and also too inefficient for doing multi-match/tournament stuff. Around this time the Australian Open was starting too, so I began porting and modifying the script for the Open's page. With the bits of data I managed to put together several dashboard-type vizzes, here's one from Andy Murray's 2nd round epic. 
+3\. This code was working okay for single matches but was breaking down and also too inefficient for doing multi-match/tournament stuff. Around this time the Australian Open was starting too, so I began porting and modifying the script for the Open's page. With the bits of data I managed to put together several dashboard-type vizzes, here's one from Andy Murray's 2nd round epic. 
 
 <p align="center">
   <img src="/assets/img/2023-03-10-Scraping-By/01_MuryGoat.png">
 </p>
 {:.figure}
 
-4. Just when I was about to bury this endeavour for good, I chanced upon this [page](https://stackoverflow.com/questions/73735401/scraping-an-atptour-com-api-returns-what-looks-like-encrypted-data). Some ChatGPT and code tweaks later...my old code was ready for the bin. Stackoverflow user Gabjauf, a true open data hero. With considerable help from Peter's [older work](https://github.com/petertea96/tennis_analytics/tree/master/projects/roland_garros_project) to label things, it was time to have some fun. A couple of example visuals here: 
+4\. Just when I was about to bury this endeavour for good, I chanced upon this [page](https://stackoverflow.com/questions/73735401/scraping-an-atptour-com-api-returns-what-looks-like-encrypted-data). Some ChatGPT and code tweaks later...my old code was ready for the bin. Stackoverflow user Gabjauf, a true open data hero. With considerable help from Peter's [older work](https://github.com/petertea96/tennis_analytics/tree/master/projects/roland_garros_project) to label things, it was time to have some fun. A couple of example visuals here: 
 
 <p align="center">
   <img src="/assets/img/2023-03-10-Scraping-By/Djokovic_Returns_vs_Tsitsipas.png">
@@ -57,7 +57,7 @@ Stefanos vs others: meh
 vs Novak: I'm in danger
 {:.figure}
 
-5. To be fair to myself, my original codes weren't entirely binned, as I still use parts of it now to crawl the ATP's website for the calendar, tournament results and match page URLs to create tables like this:
+5\. To be fair to myself, my original codes weren't entirely binned, as I still use parts of it now to crawl the ATP's website for the calendar, tournament results and match page URLs to create tables like this:
 
 <p align="center">
   <img src="/assets/img/2023-03-10-Scraping-By/atp-tables.png">
